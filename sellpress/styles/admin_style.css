@@ -1,0 +1,257 @@
+.sellpress_wrap {
+    width: 960px;
+}
+
+@media screen and (max-width: 970px) {
+    .sellpress_wrap {
+        width: calc(100% - 20px);
+    }
+}
+
+.sellpress_action {
+    margin-left: 10px !important;
+    vertical-align: middle !important;
+}
+
+.sellpress_status_messages {
+    display: block;
+    margin: 15px 0;
+}
+
+.sellpress_status_messages_inner {
+    background: white;
+    padding: 15px;
+    min-width: 300px;
+}
+
+.sellpress_status_message {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.sellpress_wrap img {
+    max-width: 100%;
+}
+
+.sellpress_form_row {
+    margin-bottom: 10px;
+}
+
+.sellpress_product_form_short_description {
+    width: 200px;
+}
+
+.sellpress_product_form_name {
+    width: 400px;
+}
+
+.sellpress_product_form_price {
+    width: 100px;
+}
+
+.sellpress_product_form_description {
+    width: 400px;
+    resize: vertical;
+}
+
+.sellpress_product_image {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+    vertical-align: top;
+    border: 2px solid #dddfe2;
+    padding: 5px;
+    box-shadow: none !important;
+}
+
+.sellpress_product_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sellpress_product_add_image {
+    background: url(../images/add-image.png) no-repeat 50% 40%;
+    background-size: 20px;
+    border: 2px dashed #dddfe2;
+}
+
+.sellpress_product_add_image:hover {
+    background-size: 25px;
+}
+
+.sellpress_product_add_image_inner {
+    display: block;
+    text-align: center;
+    color: #90949c;
+    padding-top: 55%;
+}
+
+.sellpress_product_remove_image {
+    position: absolute;
+    top: -8px; /*border: 1px solid #c8c8c8;*/
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/cancel.svg) no-repeat;
+    background-size: 16px 16px;
+}
+
+.sellpress_remove_product {
+    color: darkred;
+}
+
+.sellpress_loading {
+    width: 20px;
+    height: 20px;
+    background: url(../images/loading.svg) no-repeat;
+    background-size: 20px 20px;
+    display: none;
+    vertical-align: middle;
+}
+
+.sellpress_loading.active {
+    display: inline-block;
+}
+
+.sellpress_fadeout {
+    animation: sellpress-fadeout 0.15s 1;
+}
+
+@-webkit-keyframes sellpress-fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.sellpress_form_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sellpress_form_table tr td {
+    padding: 10px;
+}
+
+.sellpress_form_table tr td:first-child {
+    width: 170px;
+    text-align: right;
+}
+
+.sellpress_form_table tr td:nth-child(2):not(.sellpress_form_table_transparent) {
+    background-color: white;
+    /*border: 1px solid #c8c8c8;*/
+}
+
+
+.sellpress_settings_data_table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.sellpress_settings_data_table tr td {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5em;
+    padding: 8px 10px;
+}
+
+.sellpress_settings_data_table tr:not(:last-child) td:first-child {
+    width: 170px;
+    text-align: right;
+}
+
+.sellpress_settings_data_table tr:not(:last-child) td:nth-child(2):not(.sellpress_table_heading) {
+    background-color: white;
+    border: 1px solid #c8c8c8
+}
+
+
+.sellpress_switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.sellpress_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sellpress_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.sellpress_slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .15s;
+    transition: .15s;
+
+}
+
+
+.sellpress_slider:before {
+    border-radius: 50%;
+}
+
+input:checked + .sellpress_slider {
+    background-color: #2196F3;
+}
+
+input:focus + .sellpress_slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sellpress_slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.sellpress_admin_filters {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sellpress_admin_filters h2 {
+    margin-bottom: 5px;
+}
+
+.sellpress_admin_filter {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sellpress_admin_filter_label {
+    margin-right: 5px;
+}

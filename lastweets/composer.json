@@ -1,0 +1,6 @@
+{
+    "require": {
+        "htmlburger/carbon-fields": "^3.0",
+        "j7mbo/twitter-api-php": "^1.0"
+    }
+}

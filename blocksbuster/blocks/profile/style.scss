@@ -1,0 +1,94 @@
+$white: #fff;
+$black: #000;
+$blue: #ff0000;
+$grey: #f2f2f2;
+$class-slug: wpbb-description-font !default;
+.wp-block-blocksbuster-profile{
+    .wpbb-section{
+        padding: 0 20px;
+    }
+    .wpbb-hero-title{
+        margin: 0;
+        padding: 25px 0 100px;
+        text-align: center;
+        text-align: center;
+        &::before{
+            display: none;
+        }
+    }
+    .wpbb-card-profile{
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: $grey;
+        border: 1px solid rgba($black,.125);
+        border-radius: .25rem;
+        box-shadow: 0px 12px 19px -7px rgba($black,.3);
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        width: 400px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .wpbb-card-avatar {
+        max-width: 120px;
+        max-height: 120px;
+        margin: -60px auto 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .wpbb-card-block {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+        text-align: center;
+    }
+    
+    .wpb-card-footer{
+        text-align: center;
+    }
+    .wpbb-card-description p{
+        margin: 0;
+    }
+    @for $i from 1 through 30{
+        .#{$class-slug}-#{$i}{
+            font-size: 0px + $i
+        }
+    }
+    .wpbb-social-link{
+        width: 40px;
+        height: 40px;
+        color: $white;
+        background: #767676;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: inline-flex;
+        vertical-align: top;
+        margin: 0 5px;
+        line-height: 40px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        svg{
+            height: 20px;
+            width: 20px;
+        }
+    }
+    .wpbb-card-footer{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .button_img_upload{
+        border: 0;
+    }
+}

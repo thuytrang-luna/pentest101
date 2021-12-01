@@ -1,0 +1,9 @@
+.sellpress_container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sellpress_hide {
+    display: none !important;
+}

@@ -1,0 +1,40 @@
+div.wp-block-catenis-blocks-display-message div.uicontainer {
+    position: relative;
+}
+
+div.wp-block-catenis-blocks-display-message div.uicontainer.ctn-spinner {
+    min-height: 2em;
+}
+
+div.wp-block-catenis-blocks-display-message div.error {
+    display: none;
+    margin-top: 2em
+}
+
+div.wp-block-catenis-blocks-display-message div.error > p.error {
+    color: crimson
+}
+
+div.wp-block-catenis-blocks-display-message pre {
+    display: inline;
+    word-wrap: break-word;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+div.wp-block-catenis-blocks-display-message pre + span {
+    color: gray;
+}
+
+div.wp-block-catenis-blocks-display-message pre + span a {
+    color: gray;
+}
+
+div.wp-block-catenis-blocks-display-message div.noctnapiproxy {
+    border: 1px solid red;
+    padding: 2em;
+    text-align: center;
+    color: crimson;
+    display: none
+}
